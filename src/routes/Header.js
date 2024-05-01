@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from 'react';
 import logo from "/Users/emilydaniels/Development/code/post-grad/kasia-site/src/images/logo-white.png";
 import blackLogo from "/Users/emilydaniels/Development/code/post-grad/kasia-site/src/images/logo-black.png";
-import ErrorPage from "/Users/emilydaniels/Development/code/post-grad/kasia-site/src/error-page.js";
 import About from "./About";
 import Gallery from "./Gallery";
 import Menus from "./Menus";
@@ -61,7 +60,7 @@ function handleMouseLeave(){
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/menus" element={<Menus />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/error" element={<ErrorPage />} />
+    
           </Routes>
       </Router>
         
