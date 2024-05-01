@@ -1,0 +1,20 @@
+3/17/24:
+
+Worked on a separate tutorial for BrowswerRouter and now I need to finish connecting the BrowswerRouter throughout site for Kasia
+
+3/18/24:
+-completed all routing for navigation bar and logo/landing page
+-worked on filling out About page with content
+    -used Tiinyhost for hosting the pdf of her "resume"
+-attempted to optimize the routing, but when I left for the day, my routes were conjuring an error that the component was not connected. 
+
+3/20/24
+-got BrowswerRouter up and running, figured out all bugs. I had been using obsolete hooks (Switch is not Routes and you link to the element attribute, not component)
+    -still not able to scroll to other elements with the functino I created, working on that.
+-filled in simple content for Home, About, Gallery, and Menus. Currently setting up ContactForm. I have decided to use Web3Forms for the email form as a test to see if I prefer this service or emailjs more. 
+-struggling through setting up web3forms correctly
+-figured it out!!!
+
+3/29/24
+-trying to figure out how to scroll to each section, my scrollTo funciton did not work. Currently trying out useLocation and useRef
+-GIVE UP on the scroll feature, I think I would have had to React Scroll from the beginning
