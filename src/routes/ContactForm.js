@@ -2,7 +2,6 @@ import food from "/Users/emilydaniels/Development/code/post-grad/kasia-site/src/
 import React, { useRef, useState } from "react";
 
 export default function ContactForm() {
-  const [date, setDate] = useState("");
   const dateInputRef = useRef(null);
   const [ result, setResult ] = useState('');
 
@@ -29,10 +28,6 @@ export default function ContactForm() {
     }
   };
 
-  const handleChange = (e) => {
-    setDate(e.target.value);
-  };
-
   return (
     <>
     <div className="contact-form">
@@ -50,7 +45,6 @@ export default function ContactForm() {
         <input
           type="date"
           name="date"
-          onChange={handleChange}
           ref={dateInputRef}
           required
         ></input>

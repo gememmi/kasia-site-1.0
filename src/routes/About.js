@@ -5,8 +5,8 @@ export default function About() {
   return (
     <div id="about">
         <div className="about-left">
-      <img className= "about-img-1" src={kasia} />
-      <img  className= "about-img" src={food} />
+      <img className= "about-img-1" alt="kasia sitting and giving the peace sign" src={kasia} />
+      <img  className= "about-img" alt=" a dessert plated by kasia" src={food} />
       </div>
       <div className="about-text">
         <h1>ABOUT KASIA</h1>
@@ -20,17 +20,17 @@ export default function About() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <a target="_blank" href="https://klemenakcv.tiiny.site/">
+          <a target="_blank" rel="noopener noreferrer" href="https://klemenakcv.tiiny.site/">
             Resume
           </a>
-          <a target="_blank" href="https://www.instagram.com/xbornannoyedx/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/xbornannoyedx/">
             Instagram
           </a>
         </section>
       </div>
 <div className="about-right">
-      <img className= "about-img-1" src={kasia} />
-      <img  className= "about-img"src={food} />
+      <img className= "about-img-1" alt=" kasia sitting and giving the peace sign" src={kasia} />
+      <img  className= "about-img" src={food} alt=" a dessert plated by kasia" />
       </div>
     </div>
   );
