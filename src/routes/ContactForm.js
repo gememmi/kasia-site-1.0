@@ -56,7 +56,7 @@ export default function ContactForm() {
         <input id="submit-button" type="submit" value="Send"></input>
       </form>
       <span>{result}</span>
-      <img className="contact-image" src={food} />
+      <img className="contact-image"  alt= "dessert" src={food} />
     </div>
     
     </>
