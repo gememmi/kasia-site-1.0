@@ -23,23 +23,24 @@ body {
   display: flex;
   justify-content: space-between;
   height: 18vh;
+  width: 100vw;
 }
 
 .logo-image {
-  height: 13vh;
-  margin-top: 2vh;
-  margin-left: 1vh;
- 
+  height: 60%;
+  margin-top: 10%;
+  margin-left: 20%;
 }
 
 .nav-links {
   list-style-type: none;
-  width: 30vw;
-  height: 10vh;
+  width: 30%;
+  height: 30%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: 20px;
+  margin-left: 10vw;
 }
 
 .nav-links a {
@@ -48,12 +49,10 @@ body {
   padding: 2px 20px 2px 20px;
   border-radius: 30px;
   cursor: pointer;
-  
 }
 
 .nav-links a:hover {
   background-color: var(--accent-color);
-  
 }
 
 /* HOME */
@@ -63,14 +62,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh; 
-  margin: auto;
-  width: 100%;
-}
-
-.home img {
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-  margin-bottom: 20px; /* Add spacing between image and text */
 }
 
 .home-content {
@@ -80,7 +71,7 @@ body {
 
 .home-content h1 {
   font-size: 60px;
-  letter-spacing: 2vw;
+  letter-spacing: 1vw;
   font-weight: var(--font-weight);
 }
 
@@ -94,31 +85,32 @@ body {
 #about {
   display: flex;
   max-width: 100vw;
-  margin: auto;
-  padding: 0;
+  justify-content: center;
 }
 
 .about-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
 .about-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
 #about img {
-  width: 20vw;
-  
+  width: 60%;
+  border-radius: 20%;
 }
 
 .about-img-1 {
-  margin-bottom: 2rem;
+  margin-bottom: 10%;
+}
+
+.about-text {
+  width: 40%;
 }
 .about-text h1 {
   font-weight: 300;
@@ -129,29 +121,32 @@ body {
 
 .about-text section {
   background-color: var(--accent-color);
-  width: 40vw;
-  margin: auto;
-  padding: 3rem;
+  max-height: 60%;
+  max-width: 100%;
+  padding: 5%;
+  border-radius: 10%;
 }
 
 .about-text p {
   font-size: 16px;
   line-height: 2rem;
-  max-width: 45rem;
+  max-width: 100%;
 }
-
+.links-container {
+  display: flex;
+  justify-content: space-evenly;
+}
 .about-text a {
   font-size: 24px;
   text-decoration: none;
   color: var(--main-text-color);
   font-style: italic;
-  margin-left: 10vw;
 }
 
 /* GALLERY */
 .image-container {
-  display:grid;
-  grid-template-columns: repeat(4, 1fr)
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .image-container img {
@@ -159,14 +154,13 @@ body {
   margin: 2rem;
   width: 70%;
   transition: 0.3s;
-  
 }
 
 #gallery h1 {
-font-weight: var(--font-weight);
-font-size: 60px;
-text-align: center;
-letter-spacing: 1rem;
+  font-weight: var(--font-weight);
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 1rem;
 }
 
 /* MENUS */
@@ -190,30 +184,27 @@ letter-spacing: 1rem;
   font-weight: var(--font-weight);
   letter-spacing: 1rem;
   text-align: center;
-
 }
 
-
-.menus-container object{
-cursor: pointer;
-width: 25rem;
+.menus-container object {
+  cursor: pointer;
+  width: 25rem;
 }
 
-.menus-container object:nth-child(2){
+.menus-container object:nth-child(2) {
   margin-left: 3rem;
 }
 
-.menus-container object:hover{
+.menus-container object:hover {
   opacity: 0.9;
 }
 
 .modal {
-  
   position: fixed;
   z-index: 1;
   padding-top: 100px;
   left: 0;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -225,7 +216,6 @@ width: 25rem;
   margin: auto;
   display: block;
   width: 60%;
-  
 }
 
 #caption {
@@ -238,7 +228,8 @@ width: 25rem;
   height: 150px;
 }
 
-.modal-content, #caption {
+.modal-content,
+#caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -263,13 +254,21 @@ width: 25rem;
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
@@ -306,7 +305,6 @@ width: 25rem;
   text-align: center;
 }
 
-
 .contact-form {
   /* max-width: 80%; */
   display: flex;
@@ -315,14 +313,12 @@ width: 25rem;
 }
 
 form {
-margin: auto;
-display: grid;
-grid-template-columns: max-content auto; /* Adjust column sizes as needed */
-grid-template-rows: repeat(3, auto); /* Adjust row sizes as needed */
-grid-column-gap: 10px;
-grid-row-gap: 20px;
-
-
+  margin: auto;
+  display: grid;
+  grid-template-columns: max-content auto; /* Adjust column sizes as needed */
+  grid-template-rows: repeat(3, auto); /* Adjust row sizes as needed */
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
 }
 #submit-button {
   color: var(--main-text-color);
@@ -330,159 +326,144 @@ grid-row-gap: 20px;
   font-family: var(--main-font);
   text-decoration: none;
   font-size: 18px;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 30px;
   cursor: pointer;
   margin-left: 5rem;
   border: none;
- 
 }
 
 input {
   width: 100%;
 }
 form p {
-  margin: 0 ;
+  margin: 0;
   text-align: left;
-
 }
 
 .contact-image {
   margin: auto;
 }
 
-
-
 /* MEDIA QUERIES */
-
 
 @media screen and (max-width: 600px) {
 
   .header {
-    display:flex;
-    justify-content: flex-start;
-  }
-
-  .about-left {
-    position: absolute;
-    top: 60vh;
-    left: 20vw;
-
-  }
-  .about-right {
-    position: absolute;
-    top: 70vh;
-    right: 15vw;
-
-  }
-  #about {
     display: flex;
-    max-width: 100%;
-    margin: auto;
-    padding: 0;
+    justify-content: flex-start;
+    overflow: auto;
+    width: 80%;
+  
   }
+
+  .about-text h1 {
+    font-size: 40px;
+  }
+
 
   #gallery h1 {
     max-width: 100vw;
-    
   }
 
   .image-container {
     max-width: 100vw;
   }
-
-
-
 }
 
 @media screen and (max-width: 780px) {
-
-  #about {
-    flex-direction: column;
-    align-items: center; 
-    margin-left: 5vw;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 13vh;
+    margin-left: 5%;
+    
   }
 
-  .about-left {
-    position: absolute;
-    top: 100vh;
-    left: 20vw;
-
-  }
-  .about-right {
-    position: absolute;
-    top: 100vh;
-    right: 15vw;
-
-  }
 
   .about-text section {
-    width: 60%; 
+    margin: 0;
   }
-
-  .about-text a {
-    margin-left: 8vw; 
-    margin-top: 1vh; 
-
-  }
-
 
   .image-container {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr)
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #gallery {
     width: 110vw;
-    }
-  
-    #gallery h1 {
-      width: 110vw;
-    }
-
-    #menus  {
-      max-width: 100vw;
-    }
-
-    .menus-container {
-      top: 60vh;
-      left: 58vw;
-    
-    }
-    .contact-image{
-      width: 30vw;
-    }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 3vh;
-    }
-
-    #contact {
-      margin: auto;
-    }
-  
-}
-
-
-@media screen and (min-width: 1025px){
-  .about-left, .about-right {
-    margin: auto;
   }
 
-.header {
-  display:flex;
-  justify-content: space-evenly;
+  #gallery h1 {
+    width: 110vw;
+  }
+
+  #menus {
+    max-width: 100vw;
+  }
+
+  .menus-container {
+    top: 60vh;
+    left: 58vw;
+  }
+  .contact-image {
+    width: 30vw;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  #contact {
+    margin: auto;
+  }
 }
 
-.image-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr)
-}
-.menus-container {
-  left: 49vw;
+@media screen and (max-width: 1025px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
 
-}
+  .about-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
 
+  #about img {
+    max-width: 30%;
+  }
+
+  .about-img-1 {
+    margin-bottom: 0;
+    
+  }
+
+  .about-text{
+    width: 60%;
+    margin-bottom: 5%;
+  }
+  .about-text h1{
+    font-size: 40;
+  }
+ 
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .menus-container {
+    left: 49vw;
+  }
 }

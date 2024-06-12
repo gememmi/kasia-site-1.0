@@ -24,6 +24,7 @@ function handleMouseLeave(){
 
     return (
         <Router>
+          <div>
         <div className="header">
             <div className="logo-container">
             <Link to="/" onMouseEnter={ handleMouseEnter } onMouseLeave={ handleMouseLeave }>
@@ -53,7 +54,7 @@ function handleMouseLeave(){
                 </li>
               </ul>
         </div>
-               
+        </div> 
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
