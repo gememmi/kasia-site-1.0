@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from 'react';
-import logo from "/Users/emilydaniels/Development/code/post-grad/kasia-site/src/images/logo-white.png";
-import blackLogo from "/Users/emilydaniels/Development/code/post-grad/kasia-site/src/images/logo-black.png";
+import logo from "../images/logo-white.png";
+import blackLogo from "../images/logo-black.png";
 import About from "./About";
 import Gallery from "./Gallery";
 import Menus from "./Menus";
